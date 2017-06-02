@@ -13,3 +13,77 @@ Desde sua criação, em 1980, a \textit{Web} já tem muita informação usada at
 Ontologia vem do estudo Filosófico que trata da natureza do ser, do real, do existir entre entes e questões gerais de metafísicas. A morfologia da palavra nos remete a \textit{ontos+logoi} = "conhecimento do ser". Para a área da computação, uma ontologia é uma especificação formal e explícita de um conceito compartilhado. Por conceito compartilhado lê-se, objetos, entidades e relacinamentos de certo domínio, bem como características que podem ser relevantes para tal contexto\cite{gruber:1992}. 
 
 Para o contexto da pesquisa deste trabalho teremos uma aplicação \textit{Web} \textit{E-Commerce} para venda de produtos de restaurante, portanto a ontologia a ser construída(ou melhorada?) será voltada para este ambiente, assim como a elicitação dos requisitos por meio dos clientes, resultados e metodologias, estas que serão abordadas nos capítulos próximos.
+
+\section{Contexto}
+
+Após um primeiro contato com uma empresa de consultoria e distribuição de artigos de hotelaria, mesa e bar, com a intenção de construir um \textit{E-Commerce} para seu negócio, foi abordada a ideia de montar este sistema utilizando \textit{Web Semântica}, proposta que foi bem aceita pelos \textit{stakeholders} da empresa. Acrescida a oportunidade, viu-se a chance de realizar a pesquisa e desenvolvimento de uma ontologia que possa dar apoio a construção da aplicação. A empresa trabalha com um catálogo que conta com mais de 8.000 produtos, e utilizam uma plataforma \textit{on-line} onde um cliente pode fazer um orçamento, informando os produtos desejados e a quantidade, porém, isso gera um pedido que deve ser impresso e informado a um vendedor, para que este entre em contato com o cliente para que a venda possa ser efetivada, segundo o próprio cliente, este sistema encontra-se extremamente defasado e por isso, estariam perdendo oportunidades de venda.
+
+Por seu porte e renome, a empresa atende pedidos de larga escala em várias partes do Brasil, por isso, um \textit{E-Commerce} aumentaria a responsividade no atendimento a clientes onde não existem lojas físicas próximas\footnote{\url{http://www.comercioeletronico.blog.br/2009/01/19/dez-motivos-para-investir-do-comercio-eletronico/}}, sendo assim, este trabalho utilizará tecnicas de Engenharia de Software para propor uma base para criação da ontologia necessária a este desenvolvimento.
+
+A ideia \textit{core} do produto a ser desenvolvido é uma aplicação em que o cliente terá visibilidade dos itens do catálogo, bem como especificações, preço e características, existindo o interesse por parte do cliente, o mesmo poderá adicionar os produtos desejados em uma espécie de carrinho de compras, tendo a disponibilidade de definir quantidade e se deseja realmente aquele produto no orçamento final, tendo decidido pelos itens e quantidade, o usuário poderá finalizar a compra, inserindo um cartão ou gerando um boleto para efetuar o pagamento e seu pedido já seria automaticamente efetivado, não necessitando de funcionário para aprovar o pedido. A proposta da \textit{Web Semântica} neste sistema seria que, ao adicionar um tipo de produto específico ao seu carrinho de compras, os produtos a serem propostos para o usuário teriam ligação com o produto já escolhido, utilizando da ideia de \textit{linked data}, que é, em suma, usar a \textit{Web} para criar conexões entre dados de dois diferentes recursos\footnote{\url{https://www.w3.org/DesignIssues/LinkedData.html}}. Gerada essa conexão entre itens de catálogo e conjunto de itens que o usuário escolheu, o sistema poderia sugerir com maior eficácia os próximos itens a serem adicionados ao carrinho de compras.
+
+\section{Problema}
+
+Atualmente o \textit{site} que a empresa tem em seu domínio é confuso e mal elaborado, com um \textit{desing} antiquado, que tende a afastar e desanimar o cliente, e tem a única funcionalidade de elaborar orçamentos, sem qualquer inteligência, sendo que, segundo a empresa, os pedidos que chegam por meio da \textit{web} são raros e na maioria das vezes nem acontecem. Tendo em vista que as opções mais comuns para atingir clientes é baseada no uso de cookies, arquivo o qual navegadores guardam informações trocadas entre o próprio navegador e o servidor da página visitada. Partindo daí e agregando técnicas estatísticas, de aquisição de conhecimento e aprendizado de máquina, pode-se gerar dados os quais a empresa pode utilizar para alcançar de maneira mais eficiente seu cliente, com um produto ou serviço específico\cite{boland:2014}.
+
+Um dos maiores desafios da questão de publicidade contexto de consumo atual é a organização e interpretação dos dados coletados, sabidamente bastantes valiosos, mas que não são utilizados em sua total capacidade de aproveitamento\cite{zamanzadeh:2013}.
+
+Esse conjunto de causas geram problemas que são comuns na maioria dos casos em que se aplicam essas técnicas e tecnologias.
+
+\begin{itemize}
+\item Atraso de atendimento de necessidades
+\item Imprecisão de sugestões de compra
+\item Generalização de dados
+\item Desistência de compras
+\item Mal uso de recursos
+\end{itemize}
+
+Com estes problemas, que são recorrentes em vários tipos de modelos de negócios atuantes na ramo virtual, podemos verificar a ineficácia da abordagem adotada, vezes por falta de informação, outras por falta de competência de quem constrói tais plataformas.
+
+	Dado tais problemas, este trabalho visa responder as seguintes questões baseadas no contexto em que se aplica:
+
+	\begin{itemize}
+	\item{\textit{Qual a visão de valor agregado para um cliente que deseja a tecnologia Web Semântica em sua aplicação?}}
+	\item{\textit{Qual a melhor ontologia a ser aplicada para um sistema de E-Commerce?}}
+	\end{itemize}
+
+	Para assim propor uma solução que responda o seguinte questionamento:
+	\begin{itemize}
+	\item{\textit{Como oferecer uma plataforma que atenda as necessidades de um cliente e melhorar a eficácia da sugestão de itens a serem comprados em um E-Commerce?}}
+	\end{itemize}
+
+\section{Objetivos}
+
+Para este trabalho, tem-se como objetivo especificar os requisitos básicos de uma plataforma \textit{E-Commerce} para um modelo de negócio específico, no caso, uma empresa de consultoria e distribuição de artigos de hotelaria, mesa e bar somadas a uma documentação de riscos e uma base ontológica para o sistema. Para isto, foram definidos os seguintes objetivos específicos:
+
+	\begin{itemize}
+	\item{Apresentar o estado da arte as quais utilizam as tecnologias de \textit{Web Semântica}}
+	\item{Elicitar requisitos funcionais para uma aplicação \textit{E-Commerce}}
+	\item{Realizar uma modelagem conceitual e propor uma ontologia no contexto citado para o modelo de negócio da empresa}
+	\end{itemize}
+
+\section{Metodologia}
+
+Afim de atacar os objetivos específicos citados, foram escolhidas metodologias que ajudarão no melhor entendimento do problema, de maneira a contribuir com uma possível solução.
+
+	\begin{enumerate}
+	\item{Pesquisas bibliográficas com foco nos problemas e em soluções, assim como verificar métodos que auxiliem na costrução de soluções. A pesquisa bibliográfica é uma abordagem técnica que visa coletar informações materiais já publicadas em livros, jornais, revistas, artigos ou qualquer outro tipo de material de acesso possível\cite{gil:2008}}
+
+		\begin{quote} A pesquisa bibliográfica é fetia a partir do levantamento de referências teóricas já analisadas, e publicadas por meios escritos ou eletrônicos, como livros, artigos científicos, páginas de \textit{Web Sites}. Todo trabalho científico inicia-se com pesquisa 				bibliográfica, que permite ao pesquisador conhecer o que já foi estudado sobre o assunto. Existem também pesquisas científicas que se baseinham única e exclusivamente na pesquisa bibliográfica, procurando referências teórias publicadas com o objetivo de 				coletar informações e conhecimentos prévios sobre um tema a respeito do qual se busca respostas\cite{fonseca:2002}.
+		\end{quote}
+	\item{Com o apoio das pesquisas bibliográficas, será realizada estudo de abordagens práticas do uso de ontologias, com foco principal no \textit{Framework} denominado \textit{GoodRelations} que é a principal ferramenta de ontologia voltada para \textit{E-Commerce}, descrevendo, analisando e avaliando de acordo com critérios específicos, definindo uma ferramenta para coletar dados a serem colecionados. Tal método de pesquisa e análise é chamado exploratório e descritivo, tem como objetivo especificar as características das ontologias \cite{gil:2008}}
+	\item{Aplicando técnicas de elicitação e validação de será feito um levantamento de requisitos e necessidades junto aos \textit{Stakeholders} da empresa, com isso, gerar protótipos iterativamente, para auxiliar no desenvolvimento da solução proposta. A partir disso, definir as características principais priorizadas pela empresa, de maneira a aplicar o conceito inicial de \textit{Web Semântica} e validar com \textit{Product Owners}. Este levantamento terá suporte da empresa, esta assumindo o papel de um caso a ser estudado, Estudo de Caso que tem como objetivo compreender o evento em estudo e desenvolver proposições a respeito do objeto\cite{gil:2008}.}
+	\item{Partindo das pesquisas bibliográficas, análises de soluções existentes e do levantamento de requisitos, apoiado pela metodologia 101 de desenvolvimento, será proposta uma modelagem conceitual de ontologia. Tal metodologia é um processo que visa facilitar a criação de ontologias. Consiste em um guia de passos iterativos a serem executados para desenvolver ontologias\cite{rautenberg:2010}. Utilizando as ferramentas ASTAH\footnote{url{https://astah.com}} e Protégé\footnote{url{http://protege.stanford.edu}} que vão dar base para a concepção, modelagem e construção da ontologia.}
+	\item{Com o escopo definido e as necessidades mapeadas pelos requisitos do sistema, a solução será desenhada, utilizando técnicas de desenvolvimento de software e modelagem de processos. O padrão a ser utilizado na modelagem é o UML\footnote{url{www.uml.org}}, para construir documentos e planejar. As fases do projeto serão por iterações icrementais.}
+
+	\end{enumerate}
+
+Para o Trabalho de Conclusão de Curso 1, tem-se como escopo atingir os objetivos citados no tópico 1, estes serão dcumentados e analisados por meio das metodologias propostas. Os objetivos citados nos tópicos 2, 3, 4 e 5 serão abordadas no Trabalho de Conclusão de Curso 2, da mesma forma documentados e analisados, evoluindo também o tópico 1.
+
+\section{Organização do trabalho}
+(...)
+
+
+
+
+
