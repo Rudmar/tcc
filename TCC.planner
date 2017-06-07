@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20170306T000000Z" mrproject-version="2" calendar="2">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="&#xDA;til" description="Um dia &#xFA;til padr&#xE3;o"/>
+      <day-type id="1" name="N&#xE3;o &#xFA;til" description="Um dia n&#xE3;o &#xFA;til padr&#xE3;o"/>
+      <day-type id="2" name="Utiliza base" description="Utiliza o dia a partir de um calend&#xE1;rio base"/>
+    </day-types>
+    <calendar id="1" name="TCC">
+      <default-week/>
+      <overridden-day-types/>
+      <days/>
+    </calendar>
+    <calendar id="2" name="Padr&#xE3;o">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Ideia inicial do trabalho" note="&#10;" work="230400" start="20170306T000000Z" end="20170315T170000Z" work-start="20170306T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170306T000000Z"/>
+    </task>
+    <task id="2" name="Valida&#xE7;&#xE3;o da ideia" note="" work="230400" start="20170313T000000Z" end="20170322T170000Z" work-start="20170313T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170313T000000Z"/>
+    </task>
+    <task id="3" name="Pesquisa bibliogr&#xE1;fica inicial" note="" work="576000" start="20170320T000000Z" end="20170414T170000Z" work-start="20170320T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20170320T000000Z"/>
+    </task>
+    <task id="4" name="Pesquisa bibliogr&#xE1;fica - Com&#xE9;rcio" note="" work="576000" start="20170330T000000Z" end="20170426T170000Z" work-start="20170330T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170330T000000Z"/>
+    </task>
+    <task id="5" name="Pesquisa bibliogr&#xE1;fica - E-Commerce" note="" work="518400" start="20170403T000000Z" end="20170426T170000Z" work-start="20170403T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170403T000000Z"/>
+    </task>
+    <task id="6" name="Pesquisa bibliogr&#xE1;fica - Web Sem&#xE2;ntica" note="" work="432000" start="20170410T000000Z" end="20170428T170000Z" work-start="20170410T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170410T000000Z"/>
+    </task>
+    <task id="7" name="Pesquisa bibliogr&#xE1;fica - Ontologias" note="" work="432000" start="20170412T000000Z" end="20170502T170000Z" work-start="20170412T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170412T000000Z"/>
+    </task>
+    <task id="8" name="Pesquisa bibliogr&#xE1;fica - Linked data" note="" work="288000" start="20170417T000000Z" end="20170428T170000Z" work-start="20170417T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170417T000000Z"/>
+    </task>
+    <task id="9" name="Defini&#xE7;&#xE3;o do escopo do projeto" note="" work="144000" start="20170417T000000Z" end="20170421T170000Z" work-start="20170417T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170417T000000Z"/>
+    </task>
+    <task id="10" name="An&#xE1;lise e defini&#xE7;&#xE3;o de contexto" note="" work="201600" start="20170424T000000Z" end="20170502T170000Z" work-start="20170424T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170424T000000Z"/>
+    </task>
+    <task id="11" name="Defini&#xE7;&#xE3;o da abordagem e metodologia" note="" work="1314000" start="20170403T000000Z" end="20170605T140000Z" work-start="20170403T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170403T000000Z"/>
+    </task>
+    <task id="12" name="Documenta&#xE7;&#xE3;o e trabalho escrito" note="" work="1440000" start="20170410T000000Z" end="20170616T170000Z" work-start="20170410T080000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170410T000000Z"/>
+    </task>
+    <task id="13" name="Entrega e defesa do trabalho" note="" work="28800" start="20170627T000000Z" end="20170627T170000Z" work-start="20170627T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170627T000000Z"/>
+    </task>
+    <task id="14" name="An&#xE1;lise e corre&#xE7;&#xF5;es" note="" work="144000" start="20170628T000000Z" end="20170704T170000Z" work-start="20170628T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20170628T000000Z"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
